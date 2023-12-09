@@ -6,6 +6,7 @@ import axios, { AxiosResponse } from 'axios';
 import { Dropzone, ExtFile, FileMosaic } from "@dropzone-ui/react";
 import PublishIcon from '@mui/icons-material/Publish';
 import useLoader from '../loader/Loader';
+import { SwalAlert } from '@/utils/alert';
 
 const FileUpload: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -43,9 +44,13 @@ const FileUpload: React.FC = () => {
         const blob: Blob = b64toBlob(data)
         saveAs(blob, "emails.zip");
     } catch (error) {
-        throw error;
+      SwalAlert.showAlert({
+        icon: "error",
+        title: "Archivo excel invalido. Verifica que la cabecera del excel sea 'email'"
+      });
     } finally {
       closeLoader();
+      setFiles([]);
     }
 
     handleClose();
