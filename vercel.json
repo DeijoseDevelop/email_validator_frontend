@@ -1,0 +1,9 @@
+{
+    "builds": [
+        {
+            "src": "./app/api/  **",
+            "use": "@vercel/node",
+            "config": { "maxLambdaSize": "300mb" }
+        }
+    ]
+}

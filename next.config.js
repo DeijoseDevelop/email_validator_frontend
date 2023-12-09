@@ -4,10 +4,7 @@ const nextConfig = {
     compiler: {
         styledComponents: true,
     },
-    env: {
-        BACKEND_URL: process.env.BACKEND_URL,
-        BACKEND_API_KEY: process.env.BACKEND_API_KEY
-    }
+    env: {}
 }
 
 module.exports = nextConfig

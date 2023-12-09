@@ -27,16 +27,10 @@ const FileUpload: React.FC = () => {
 
     try {
         openLoader();
-        const response: AxiosResponse = await axios.post(
-          `${process.env.BACKEND_URL}/email/validate/file/`,
+        const response = await axios.post(
+          "/api/file",
           formData,
-          {
-              headers: {
-                  'Content-Type': 'multipart/form-data',
-                  'x-api-key': process.env.BACKEND_API_KEY,
-              }
-          }
-      );
+        )
         const { data } = await response.data;
         const blob: Blob = b64toBlob(data)
         saveAs(blob, "emails.zip");
