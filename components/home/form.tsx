@@ -50,7 +50,7 @@ export default function HomeForm() {
                     marginTop: 80,
                 }}
             >
-                <Stack direction="row" justifyContent="center" alignItems="start">
+                <Stack sx={{ mb: 2 }} direction="row" justifyContent="center" alignItems="start">
                     <Stack>
                         <TextField
                             type="email"
