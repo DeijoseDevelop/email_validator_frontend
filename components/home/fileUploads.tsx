@@ -46,7 +46,7 @@ const FileUpload: React.FC = () => {
     } catch (error) {
       SwalAlert.showAlert({
         icon: "error",
-        title: "Archivo excel invalido. Verifica que la cabecera del excel sea 'email'"
+        title: "Invalid excel file. Verify that the excel header is 'email'."
       });
     } finally {
       closeLoader();

@@ -6,7 +6,7 @@ export class SwalAlert {
             icon: icon,
             title: title,
             showConfirmButton: false,
-            timer: 4000,
+            // timer: 4000,
         });
     }
 
