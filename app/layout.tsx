@@ -27,7 +27,15 @@ export default function RootLayout({
           fill
           style={{ zIndex: 1 }}
         />
-        <main style={{ position: "fixed", zIndex: 2, width: "100%" }}>
+        <main
+          style={{
+            width: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            left: 0,
+            top: 0,
+            position: "fixed",
+            zIndex: 2,
+          }}>
           {children}
         </main>
       </body>
