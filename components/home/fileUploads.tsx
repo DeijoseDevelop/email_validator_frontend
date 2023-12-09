@@ -27,10 +27,12 @@ const FileUpload: React.FC = () => {
 
     try {
         openLoader();
+
         const response = await axios.post(
           "/api/file",
           formData,
         )
+
         const { data } = await response.data;
         const blob: Blob = b64toBlob(data)
         saveAs(blob, "emails.zip");
