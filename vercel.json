@@ -1,9 +1,7 @@
 {
-    "builds": [
-        {
-            "src": "./",
-            "use": "@vercel/node",
-            "config": { "maxLambdaSize": "300mb" }
+    "functions": {
+        "api/file/*.ts": {
+            "maxDuration": 300
         }
-    ]
+    }
 }
