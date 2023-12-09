@@ -9,16 +9,32 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dropzone-ui/react": "^7.0.4",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.20",
+    "axios": "^1.6.2",
+    "file-saver": "^2.0.5",
+    "file64": "^1.0.3",
+    "lodash": "^4.17.21",
+    "lottie-react": "^2.4.0",
+    "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.0.4"
+    "react-hook-form": "^7.48.2",
+    "react-icons": "^4.12.0",
+    "sweetalert2": "^11.10.1",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/file-saver": "^2.0.7",
+    "@types/lodash": "^4.14.202",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "eslint-config-next": "14.0.4",
+    "typescript": "^5"
   }
 }
